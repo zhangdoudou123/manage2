@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#">用户管理</a>
-
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item ">
-              <router-link to="/">主页</router-link>
-            </li>
-            <li class="nav-item ">
-              <router-link to="/About">关于</router-link>
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <div class="nva ">
+      <hr>
+      <strong class="item">用户管理系统</strong>
+      <router-link to="/" class="aaa">主页</router-link>|
+      <router-link to="/About" class="aaa">关于</router-link>
+      <router-link to="/Add" class="navbar-right">添加用户</router-link>
+      <hr>
+    </div>
     
+
 
     <router-view/>
   </div>
@@ -27,6 +21,28 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #0099ff;
+}
+.nva{
+  background: #2c3e50;
+  width: 100%;
+  height: 100px;
+}
+.item{
+  color:whitesmoke;
+  font-size: 30px;
+  display: flex;
+  float:inline-start;
+  
+}
+.aaa{
+  margin: 10px;
+  font-size: 20px;
+  color:white;
+}
+.navbar-right{
+  margin-left: 100px;
+  color:rgb(116, 105, 105);
 }
 </style>
+ 
